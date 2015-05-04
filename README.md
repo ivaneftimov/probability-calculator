@@ -1,2 +1,2 @@
 # probability-calculator
-Demo app showcasing SOA application with ASP.NET WebAPI and AngularJS
+Demo app showcasing SPA application with ASP.NET WebAPI and AngularJS following the SOA design pattern
