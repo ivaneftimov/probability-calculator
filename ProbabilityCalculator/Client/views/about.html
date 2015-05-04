@@ -1,0 +1,27 @@
+﻿
+<div>
+    <p>
+        Probability Calculator is an ASP.NET application on the server leveraging AngularJS on the client. The server side combines two technologies, MVC and WebAPI. MVC logic is simple, but it is essential for this application because it serves the single page for the Single Page Application (SPA) on top of which the AngualrJS structure is built. WebAPI, on the other hand, provides all the logic needed by the client through a REST API. In an essence, this application follows the Service Oriented Architecture (SOA) design pattern.
+    </p>
+    <p>
+        The server-side has two controllers – the AppController and the CalculationsController. The AppController is taking care of preparing the view for the base server page (Index.cshtm). The CalculationsController is handling the REST API logic, exposing two methods, one for getting the calculations and another for creating a calculation. This controller is completely unit-tested.
+    </p>
+    <p>
+        The data persistence is handled by CalculationsRepository, which at this point stores the data in memory (singleton object), but in fact it is supposed to communicate with a data storage.
+    </p>
+    <p>
+        The client-side logic is located in the folder <i>~/Client</i>. It contains the angular application logic (module, controller and factories), the views, the tests and the configuration files. The application uses angular-route module to provide simple client-side routing, needed to display the two views: homepage and about page. All the calculations performed by the app are done on the client. 
+    </p>
+    <p>
+        The angular controller is tied to the homepage view and prepares the view model for it. It also exposes the methods for communication with the factories. 
+    </p>
+    <p>
+        There are two factories: calculator and calculationsRepository. The first one performs the actual mathematical calculations while the second one stores the calculation results using the REST API exposed by the server. 
+    </p>
+    <p>
+        The controller and calculator factories are unit-tested. In order to run the tests you need to open a Command Prompt console in the Client folder and run <b>npm install</b> and <b>bower install</b> commands. These commands are run only once in order to install the required modules for running the tests. In order those commands to work you need to have installed, nodeJS, bower and Git on your machine and expose them as public environment variables. The commands which actually run the tests is <b>grunt</b>.
+    </p>
+    <p>
+        For styling, these application uses the bootstrap styling library.
+    </p>
+</div>

@@ -1,0 +1,9 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/packages
+/ProbabilityCalculator/obj/Debug
+/ProbabilityCalculatorTest/obj/Debug
+/ProbabilityCalculator/Client/bower_components
+/ProbabilityCalculator/Client/node_modules

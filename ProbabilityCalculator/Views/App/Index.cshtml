@@ -1,0 +1,9 @@
+﻿@* The main server page - the "single page" from Single Page Application (SPA) *@
+
+@{ ViewBag.Title = "Probability Calculator"; }
+
+<script src="@Url.Content("~/Client/js/probabilityCalculatorApp.js")"></script>
+
+<div ng-app="probabilityCalculatorApp">
+    <div ng-view></div>
+</div>
